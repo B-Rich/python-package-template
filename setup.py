@@ -31,7 +31,7 @@ from codecs import open
 
 path = os.path.dirname(os.path.abspath(__file__))
 
-with open(os.path.join(path, 'README.rst'), encoding='utf-8') as f:
+with open(os.path.join(path, 'README.md'), encoding='utf-8') as f:
     read_me = f.read()
 
 setup(
