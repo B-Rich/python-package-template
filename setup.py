@@ -1,10 +1,10 @@
 config = {
   "name": "",
-  "version": "0.1",
+  "version": "0.0.1",
   "description": "",
   "url": "",
   "author": "Sean Harrison",
-  "author_email": "sah@blackearthgroup.com",
+  "author_email": "sah@blackearth.us",
   "license": "LGPL 3.0",
   "classifiers": [
     "Development Status :: 3 - Alpha",
