@@ -9,7 +9,7 @@ config = {
   "classifiers": [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
+    "License :: OSI Approved :: Mozilla Public License Version 2.0",
     "Programming Language :: Python :: 3"
   ],
   "entry_points": {},
