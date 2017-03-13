@@ -1,7 +1,7 @@
 config = {
-  "name": "",
+  "name": "cp17",
   "version": "0.0.1",
-  "description": "",
+  "description": "Python package for CreativePro Week, 2017",
   "url": "",
   "author": "Sean Harrison",
   "author_email": "sah@blackearth.us",
@@ -13,7 +13,7 @@ config = {
     "Programming Language :: Python :: 3"
   ],
   "entry_points": {},
-  "install_requires": ["bl"],
+  "install_requires": ["bl", "bxml", "requests"],
   "extras_require": {
     "dev": [],
     "test": []
