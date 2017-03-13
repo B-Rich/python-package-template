@@ -78,11 +78,11 @@ def get_section_elem(item):
             w, h, x, y = i.identify(format="%w,%h,%x,%y").split(',')
             print(w, h, x, y, os.path.basename(i.fn))
             img.set('href', "file://" + i.fn)
-        image_elem = E.image(img, Entity('#xA'))
-        image_elem.set(pstylekey, 'image')
-        elem.append(image_elem)
-        if image.get('caption') not in [None, '']:
-            elem.append(E.caption(image.get('caption'), Entity('#xA')))
+            image_elem = E.image(img, Entity('#xA'))
+            image_elem.set(pstylekey, 'image')
+            elem.append(image_elem)
+            if image.get('caption') not in [None, '']:
+                elem.append(E.caption(image.get('caption'), Entity('#xA')))
     for content in item.get('content'):
         elem.append(get_content_elem(content, elem))
     return elem
