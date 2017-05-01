@@ -13,7 +13,7 @@ NS = {
 E = Builder(**NS)._
 
 path = os.path.dirname(os.path.abspath(__file__))
-list_url = "http://recipes.wikia.com/api/v1/Articles/List?category=Dessert_Recipes&limit=2000"
+list_url = "http://recipes.wikia.com/api/v1/Articles/List?category=Dessert_Recipes&limit=100"
 articles_url = "http://recipes.wikia.com/api/v1/Articles"
 pstylekey = "{%(aid)s}pstyle" % NS
 content_path = os.path.join(os.path.dirname(path), 'data')
