@@ -9,6 +9,7 @@ from bf.image import Image
 NS = {
     'aid':"http://ns.adobe.com/AdobeInDesign/4.0/",
     'aid5':"http://ns.adobe.com/AdobeInDesign/5.0/",
+    'pub':"http://publishingxml.org/ns",
 }
 E = Builder(**NS)._
 
@@ -77,8 +78,8 @@ def get_section_elem(item):
             i.mogrify(density="150x150")
             w, h, x, y = i.identify(format="%w,%h,%x,%y").split(',')
             print(w, h, x, y, os.path.basename(i.fn))
-            img.set('href', "file://" + i.fn)
-            image_elem = E.image(img, Entity('#xA'))
+            img.set('href', "file://" + os.path.relpath(i.fn, content_path))
+            image_elem = E.image(img)
             image_elem.set(pstylekey, 'image')
             elem.append(image_elem)
             if image.get('caption') not in [None, '']:
